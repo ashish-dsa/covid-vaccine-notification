@@ -1,3 +1,4 @@
+import { CONFIG } from "config";
 import { addForegroundTask } from "../../services/foreground/addForegroundTask";
 import { FOREGROUND_SERVICE, FOREGROUND_TASKS } from "../../services/foreground/constants";
 import { IForegroundService } from "../../services/foreground/models/IForegroundService";
@@ -6,11 +7,11 @@ import { startForegroundService } from "../../services/foreground/startForegroun
 import { stopForegroundService } from "../../services/foreground/stopForegroundService";
 import { executeSearch } from "./executeSearch";
 
-const SEARCH_DELAY = 15000;
+
 export const startSearchService = async () => {
   await stopForegroundService();
   const foregroundTaskParams: IForegroundTask = {
-    delay: SEARCH_DELAY,
+    delay: CONFIG.SEARCH_FREQUENCY,
     onLoop: true,
     taskId: FOREGROUND_TASKS.searchTask,
     onError: (error: any) => {},
