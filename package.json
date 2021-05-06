@@ -1,0 +1,76 @@
+{
+  "name": "covidvaccinenotification",
+  "version": "0.0.11",
+  "private": true,
+  "author": {
+    "name": "Ashish Dsa",
+    "email": "ashd621@gmail.com"
+  },
+  "scripts": {
+    "android": "concurrently --kill-others-on-fail \"yarn start --reset-cache\" \"react-native run-android && react-native log-android\" \"yarn stay-awake-android\"",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "update-version": "yarn version --patch && react-native-version -L -A --generate-build",
+    "stay-awake-android": "while true; do adb shell input keyevent mouse ; sleep 55 ; done"
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "1.15.4",
+    "@react-native-community/masked-view": "0.1.11",
+    "@react-native-community/push-notification-ios": "1.8.0",
+    "@react-navigation/native": "5.9.4",
+    "@react-navigation/stack": "5.14.4",
+    "@supersami/rn-foreground-service": "1.1.1",
+    "axios": "0.21.1",
+    "concurrently": "6.0.2",
+    "react": "17.0.1",
+    "react-native": "0.64.0",
+    "react-native-background-timer": "2.4.1",
+    "react-native-gesture-handler": "1.10.3",
+    "react-native-paper": "4.8.1",
+    "react-native-paper-dropdown": "1.0.2",
+    "react-native-permissions": "3.0.3",
+    "react-native-push-notification": "7.2.3",
+    "react-native-reanimated": "2.1.0",
+    "react-native-safe-area-context": "3.2.0",
+    "react-native-screens": "3.1.1",
+    "react-native-vector-icons": "8.1.0",
+    "react-native-webview": "11.4.3"
+  },
+  "devDependencies": {
+    "@babel/core": "7.12.9",
+    "@babel/runtime": "7.12.5",
+    "@prettier/plugin-ruby": "1.5.5",
+    "@react-native-community/eslint-config": "2.0.0",
+    "@types/jest": "26.0.20",
+    "@types/react-native": "0.64.0",
+    "@types/react-native-push-notification": "7.2.0",
+    "@types/react-test-renderer": "16.9.2",
+    "babel-jest": "26.6.3",
+    "eslint": "7.25.0",
+    "eslint-config-airbnb": "18.2.1",
+    "eslint-config-airbnb-typescript": "12.3.1",
+    "eslint-config-prettier": "8.3.0",
+    "jest": "26.6.3",
+    "metro-react-native-babel-preset": "0.64.0",
+    "prettier-plugin-organize-imports": "1.1.1",
+    "react-native-version": "4.0.0",
+    "react-test-renderer": "17.0.1",
+    "typescript": "3.8.3"
+  },
+  "resolutions": {
+    "@types/react": "17"
+  },
+  "jest": {
+    "preset": "react-native",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}
