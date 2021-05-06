@@ -21,7 +21,7 @@ export const startSearchService = async () => {
     id: FOREGROUND_SERVICE.searchService,
     title: "Searching Vaccination Centers",
     message:
-      "Checking for vaccine centers in the background. We will notify you when the vaccine is available! Push the app in background, Do not kill the app!",
+      "We will notify you when the vaccine is available! Push the app in background, Do not kill the app!",
   };
   await startForegroundService(foregroundServiceParams);
 };
