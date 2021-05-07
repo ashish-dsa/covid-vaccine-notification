@@ -1,8 +1,8 @@
-export const ageCheck = (vaccineOver45: number, vaccineOver18: number, allChecked: boolean, adultsChecked: boolean) => {
-  if (allChecked && vaccineOver45 > 0) {
+export const ageCheck = (vaccineOver45: number, vaccineOver18: number, senior: boolean, adult: boolean) => {
+  if (senior && vaccineOver45 > 0) {
     return true;
   }
-  if (adultsChecked && vaccineOver18 > 0) {
+  if (adult && vaccineOver18 > 0) {
     return true;
   }
   return false;
