@@ -9,7 +9,11 @@ import { StyleSheet } from "react-native";
 import { Appbar, withTheme } from "react-native-paper";
 import { SEARCH_OPTIONS } from "./constants";
 
-const SearchAndNotify = ({ navigation, theme }: { navigation: NavigationProp<any>; theme: ReactNativePaper.Theme }) => {
+interface ISearchAndNotify {
+  navigation: NavigationProp<any>;
+  theme: ReactNativePaper.Theme;
+}
+const SearchAndNotify = ({ navigation, theme }: ISearchAndNotify) => {
   const [allChecked, setAllChecked] = React.useState(false);
   const [adultsChecked, setAdultsChecked] = React.useState(false);
   const [notifyChecked, setNotifyChecked] = React.useState(true);
