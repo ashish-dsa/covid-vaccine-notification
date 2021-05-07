@@ -1,16 +1,11 @@
+import { getDDMMYYYY } from "utils/getDDMMYYYY";
 import { getRequest } from "../httprequests/getRequest";
 
 export const searchByPincode = async (pincodes: any) => {
   if (!pincodes) {
     return null;
   }
-  let tempdate = new Date();
-  let date = [
-    tempdate.getFullYear(),
-    ("0" + (tempdate.getMonth() + 1)).slice(-2),
-    ("0" + tempdate.getDate()).slice(-2),
-  ].join("-");
-  const currentDate = date.split("-").reverse().join("-");
+  const currentDate = getDDMMYYYY();
   const pincodeList = pincodes.split(",").map((pincode: any) => {
     return pincode.toString().trim();
   });
