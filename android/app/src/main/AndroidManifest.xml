@@ -41,5 +41,6 @@
     <service android:name="com.supersami.foregroundservice.ForegroundService"></service>
     <service android:name="com.supersami.foregroundservice.ForegroundServiceTask"></service>
     <!-- End of content to add -->
+    <meta-data android:name="com.bugsnag.android.API_KEY" android:value="3743e4e6a4e2cd2722679aeceac602b9" />
   </application>
 </manifest>
