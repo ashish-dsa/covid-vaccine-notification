@@ -15,7 +15,7 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
-    return "BookVaccine";
+    return "Vaccine";
   }
 
   public boolean isOnNewIntent = false;
