@@ -1,4 +1,4 @@
-import { CONFIG } from "config";
+import { CONFIG } from "src/config";
 import { addForegroundTask } from "../../services/foreground/addForegroundTask";
 import { FOREGROUND_SERVICE, FOREGROUND_TASKS } from "../../services/foreground/constants";
 import { IForegroundService } from "../../services/foreground/models/IForegroundService";
@@ -6,7 +6,6 @@ import { IForegroundTask } from "../../services/foreground/models/IForegroundTas
 import { startForegroundService } from "../../services/foreground/startForegroundService";
 import { stopForegroundService } from "../../services/foreground/stopForegroundService";
 import { executeSearch } from "./executeSearch";
-
 
 export const startSearchService = async () => {
   await stopForegroundService();
@@ -20,8 +19,7 @@ export const startSearchService = async () => {
   const foregroundServiceParams: IForegroundService = {
     id: FOREGROUND_SERVICE.searchService,
     title: "Searching Vaccination Centers",
-    message:
-      "We will notify you when the vaccine is available! Push the app in background, Do not kill the app!",
+    message: "We will notify you when the vaccine is available! Push the app in background, Do not kill the app!",
   };
   await startForegroundService(foregroundServiceParams);
 };
