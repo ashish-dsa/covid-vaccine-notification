@@ -4,7 +4,11 @@ import React from "react";
 import { SafeAreaView, StyleSheet } from "react-native";
 import { Appbar, withTheme } from "react-native-paper";
 
-const Home = ({ navigation, theme }: { navigation: NavigationProp<any>; theme: ReactNativePaper.Theme }) => {
+interface IHome {
+  navigation: NavigationProp<any>;
+  theme: ReactNativePaper.Theme;
+}
+const Home = ({ navigation, theme }: IHome) => {
   return (
     <SafeAreaView style={{ ...styles.backgroundStyle, backgroundColor: theme.colors.surface }}>
       <Appbar.Header>
