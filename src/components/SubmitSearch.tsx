@@ -3,6 +3,17 @@ import { ROUTES } from "navigation/constants";
 import React, { useEffect, useState } from "react";
 import { StyleSheet } from "react-native";
 import { Button } from "react-native-paper";
+
+interface ISubmitSearch {
+  allChecked: boolean;
+  adultsChecked: boolean;
+  notifyChecked: boolean;
+  searchType: string;
+  freeChecked: boolean;
+  paidChecked: boolean;
+  searchParams: any;
+  navigation: NavigationProp<any>;
+}
 export const SubmitSearch = ({
   allChecked,
   adultsChecked,
@@ -12,16 +23,7 @@ export const SubmitSearch = ({
   paidChecked,
   searchParams,
   navigation,
-}: {
-  allChecked: boolean;
-  adultsChecked: boolean;
-  notifyChecked: boolean;
-  searchType: string;
-  freeChecked: boolean;
-  paidChecked: boolean;
-  searchParams: any;
-  navigation: NavigationProp<any>;
-}) => {
+}: ISubmitSearch) => {
   const [validateSearchParams, setValidateSearchParams] = useState(true);
   const validate = () => {
     if ((allChecked || adultsChecked) && (paidChecked || freeChecked) && searchParams) {

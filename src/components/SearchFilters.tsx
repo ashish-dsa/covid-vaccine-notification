@@ -2,6 +2,18 @@ import React from "react";
 import { StyleSheet, View } from "react-native";
 import { Caption, Checkbox, Subheading } from "react-native-paper";
 
+interface ISearchFilters {
+  allChecked: boolean;
+  setAllChecked: Function;
+  setAdultsChecked: Function;
+  adultsChecked: boolean;
+  notifyChecked: boolean;
+  setNotifyChecked: Function;
+  freeChecked: boolean;
+  setFreeChecked: Function;
+  paidChecked: boolean;
+  setPaidChecked: Function;
+}
 export const SearchFilters = ({
   allChecked,
   setAllChecked,
@@ -13,18 +25,7 @@ export const SearchFilters = ({
   setFreeChecked,
   paidChecked,
   setPaidChecked,
-}: {
-  allChecked: boolean;
-  setAllChecked: Function;
-  setAdultsChecked: Function;
-  adultsChecked: boolean;
-  notifyChecked: boolean;
-  setNotifyChecked: Function;
-  freeChecked: boolean;
-  setFreeChecked: Function;
-  paidChecked: boolean;
-  setPaidChecked: Function;
-}) => {
+}: ISearchFilters) => {
   return (
     <View style={styles.filters}>
       <Subheading>Filters</Subheading>
