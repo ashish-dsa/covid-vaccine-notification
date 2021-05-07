@@ -3,7 +3,11 @@ import React, { useRef } from "react";
 import { Appbar, withTheme } from "react-native-paper";
 import WebView from "react-native-webview";
 
-const Appointment = ({ navigation, theme }: { navigation: NavigationProp<any>; theme: ReactNativePaper.Theme }) => {
+interface IAppointment {
+  navigation: NavigationProp<any>;
+  theme: ReactNativePaper.Theme;
+}
+const Appointment = ({ navigation, theme }: IAppointment) => {
   const webViewRef = useRef(null);
 
   return (
