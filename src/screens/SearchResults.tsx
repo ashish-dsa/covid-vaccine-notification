@@ -11,15 +11,12 @@ import { executeSearch } from "./helpers/executeSearch";
 import { ISearchParams } from "./helpers/models/ISearchParams";
 import { startSearchService } from "./helpers/startSearchService";
 
-const SearchResults = ({
-  route,
-  navigation,
-  theme,
-}: {
+interface ISearchResults {
   route: any;
   navigation: NavigationProp<any>;
   theme: ReactNativePaper.Theme;
-}) => {
+}
+const SearchResults = ({ route, navigation, theme }: ISearchResults) => {
   const { allChecked, adultsChecked, notifyChecked, freeChecked, paidChecked, searchType, searchParams } = route.params;
   const [showLoader, setShowLoader] = useState(true);
   const [centersList, setCentersList] = useState([]);
