@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		00D31DF24F454FBC95341B6F /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2693D0516DDA4DEB8B1118F8 /* SimpleLineIcons.ttf */; };
-		00E356F31AD99517003FC87E /* BookVaccineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* BookVaccineTests.m */; };
+		00E356F31AD99517003FC87E /* VaccineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* VaccineTests.m */; };
 		07DF90F159744F55A4F4A0F6 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F905C02D4DA6448AA4F1D497 /* Feather.ttf */; };
 		0C40455B10524C0389BB2196 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7213309BFE77495CA3153F48 /* Foundation.ttf */; };
 		11BD4BE6427143C4BA925EB4 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C97085F5D794C35A1D08637 /* Octicons.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		31F67D3FB639D0E3C6089202 /* libPods-BookVaccine-BookVaccineTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D6AE9478E8BCD0366C2B26E /* libPods-BookVaccine-BookVaccineTests.a */; };
+		31F67D3FB639D0E3C6089202 /* libPods-Vaccine-VaccineTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D6AE9478E8BCD0366C2B26E /* libPods-Vaccine-VaccineTests.a */; };
 		3B8C9AC0CFED4C678A431FA3 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 66E4AFF118BC4951BCAE96EA /* EvilIcons.ttf */; };
 		477EA5527C9E4223A86F1108 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC9EB0C8AF5F4C1DB75BF0A2 /* FontAwesome5_Solid.ttf */; };
-		498F024857E0545736804A65 /* libPods-BookVaccine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6593CDE7E804711E12F7C237 /* libPods-BookVaccine.a */; };
+		498F024857E0545736804A65 /* libPods-Vaccine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6593CDE7E804711E12F7C237 /* libPods-Vaccine.a */; };
 		585C8E5D82B445DDA7E7CFFA /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A1C0B6A4E11495D9C09A047 /* AntDesign.ttf */; };
 		5C82B1EAE11643D2AFD773C3 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D61E1BE8F814C91A42C1217 /* Zocial.ttf */; };
 		7150517920FC4C9BB9F9D9D4 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 872D68A628F643AB9BB8BF6C /* Ionicons.ttf */; };
@@ -38,43 +38,43 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = BookVaccine;
+			remoteInfo = Vaccine;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00E356EE1AD99517003FC87E /* BookVaccineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookVaccineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* VaccineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VaccineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* BookVaccineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookVaccineTests.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* VaccineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VaccineTests.m; sourceTree = "<group>"; };
 		0A1C0B6A4E11495D9C09A047 /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* BookVaccine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookVaccine.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = BookVaccine/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = BookVaccine/AppDelegate.m; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = BookVaccine/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = BookVaccine/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = BookVaccine/main.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* Vaccine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vaccine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Vaccine/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Vaccine/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Vaccine/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Vaccine/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Vaccine/main.m; sourceTree = "<group>"; };
 		1D61E1BE8F814C91A42C1217 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
-		22BDB6387227271AAE812B21 /* Pods-BookVaccine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookVaccine.release.xcconfig"; path = "Target Support Files/Pods-BookVaccine/Pods-BookVaccine.release.xcconfig"; sourceTree = "<group>"; };
+		22BDB6387227271AAE812B21 /* Pods-Vaccine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vaccine.release.xcconfig"; path = "Target Support Files/Pods-Vaccine/Pods-Vaccine.release.xcconfig"; sourceTree = "<group>"; };
 		2693D0516DDA4DEB8B1118F8 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		2C97085F5D794C35A1D08637 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		368E12C0BB194AB0BC048A4D /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
-		462A2EC32639EDA700CD569B /* BookVaccine.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = BookVaccine.entitlements; path = BookVaccine/BookVaccine.entitlements; sourceTree = "<group>"; };
+		462A2EC32639EDA700CD569B /* Vaccine.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Vaccine.entitlements; path = Vaccine/Vaccine.entitlements; sourceTree = "<group>"; };
 		4D017523F09E4D82A820C599 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
-		6593CDE7E804711E12F7C237 /* libPods-BookVaccine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BookVaccine.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6593CDE7E804711E12F7C237 /* libPods-Vaccine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Vaccine.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66E4AFF118BC4951BCAE96EA /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
-		6A8436CA61553F9A2006D33A /* Pods-BookVaccine-BookVaccineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookVaccine-BookVaccineTests.debug.xcconfig"; path = "Target Support Files/Pods-BookVaccine-BookVaccineTests/Pods-BookVaccine-BookVaccineTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6A8436CA61553F9A2006D33A /* Pods-Vaccine-VaccineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vaccine-VaccineTests.debug.xcconfig"; path = "Target Support Files/Pods-Vaccine-VaccineTests/Pods-Vaccine-VaccineTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7213309BFE77495CA3153F48 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
-		7D6AE9478E8BCD0366C2B26E /* libPods-BookVaccine-BookVaccineTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BookVaccine-BookVaccineTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = BookVaccine/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7D6AE9478E8BCD0366C2B26E /* libPods-Vaccine-VaccineTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Vaccine-VaccineTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Vaccine/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		872D68A628F643AB9BB8BF6C /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		875D513106E3456F8F7383D4 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
-		8C69F5024A706C60BC14916D /* Pods-BookVaccine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookVaccine.debug.xcconfig"; path = "Target Support Files/Pods-BookVaccine/Pods-BookVaccine.debug.xcconfig"; sourceTree = "<group>"; };
+		8C69F5024A706C60BC14916D /* Pods-Vaccine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vaccine.debug.xcconfig"; path = "Target Support Files/Pods-Vaccine/Pods-Vaccine.debug.xcconfig"; sourceTree = "<group>"; };
 		A6E1743350B4424E96698BC9 /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
 		AC9EB0C8AF5F4C1DB75BF0A2 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
 		BAB7C60889844B309DB91BBD /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		EB5AB203299549E9B3CC0A4D /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		EE56B4D1A7EDAF0B5D7523F3 /* Pods-BookVaccine-BookVaccineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookVaccine-BookVaccineTests.release.xcconfig"; path = "Target Support Files/Pods-BookVaccine-BookVaccineTests/Pods-BookVaccine-BookVaccineTests.release.xcconfig"; sourceTree = "<group>"; };
+		EE56B4D1A7EDAF0B5D7523F3 /* Pods-Vaccine-VaccineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vaccine-VaccineTests.release.xcconfig"; path = "Target Support Files/Pods-Vaccine-VaccineTests/Pods-Vaccine-VaccineTests.release.xcconfig"; sourceTree = "<group>"; };
 		F2FAD5AC5EB84A41A9E24A9A /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
 		F905C02D4DA6448AA4F1D497 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31F67D3FB639D0E3C6089202 /* libPods-BookVaccine-BookVaccineTests.a in Frameworks */,
+				31F67D3FB639D0E3C6089202 /* libPods-Vaccine-VaccineTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,20 +92,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				498F024857E0545736804A65 /* libPods-BookVaccine.a in Frameworks */,
+				498F024857E0545736804A65 /* libPods-Vaccine.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* BookVaccineTests */ = {
+		00E356EF1AD99517003FC87E /* VaccineTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* BookVaccineTests.m */,
+				00E356F21AD99517003FC87E /* VaccineTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = BookVaccineTests;
+			path = VaccineTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -116,10 +116,10 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* BookVaccine */ = {
+		13B07FAE1A68108700A75B9A /* Vaccine */ = {
 			isa = PBXGroup;
 			children = (
-				462A2EC32639EDA700CD569B /* BookVaccine.entitlements */,
+				462A2EC32639EDA700CD569B /* Vaccine.entitlements */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -127,15 +127,15 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = BookVaccine;
+			name = Vaccine;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				6593CDE7E804711E12F7C237 /* libPods-BookVaccine.a */,
-				7D6AE9478E8BCD0366C2B26E /* libPods-BookVaccine-BookVaccineTests.a */,
+				6593CDE7E804711E12F7C237 /* libPods-Vaccine.a */,
+				7D6AE9478E8BCD0366C2B26E /* libPods-Vaccine-VaccineTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -143,10 +143,10 @@
 		3C508F0576675F54E808FF0F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8C69F5024A706C60BC14916D /* Pods-BookVaccine.debug.xcconfig */,
-				22BDB6387227271AAE812B21 /* Pods-BookVaccine.release.xcconfig */,
-				6A8436CA61553F9A2006D33A /* Pods-BookVaccine-BookVaccineTests.debug.xcconfig */,
-				EE56B4D1A7EDAF0B5D7523F3 /* Pods-BookVaccine-BookVaccineTests.release.xcconfig */,
+				8C69F5024A706C60BC14916D /* Pods-Vaccine.debug.xcconfig */,
+				22BDB6387227271AAE812B21 /* Pods-Vaccine.release.xcconfig */,
+				6A8436CA61553F9A2006D33A /* Pods-Vaccine-VaccineTests.debug.xcconfig */,
+				EE56B4D1A7EDAF0B5D7523F3 /* Pods-Vaccine-VaccineTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -185,9 +185,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* BookVaccine */,
+				13B07FAE1A68108700A75B9A /* Vaccine */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* BookVaccineTests */,
+				00E356EF1AD99517003FC87E /* VaccineTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				3C508F0576675F54E808FF0F /* Pods */,
@@ -201,8 +201,8 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* BookVaccine.app */,
-				00E356EE1AD99517003FC87E /* BookVaccineTests.xctest */,
+				13B07F961A680F5B00A75B9A /* Vaccine.app */,
+				00E356EE1AD99517003FC87E /* VaccineTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -210,15 +210,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* BookVaccineTests */ = {
+		00E356ED1AD99517003FC87E /* VaccineTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "BookVaccineTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "VaccineTests" */;
 			buildPhases = (
 				93DBF91C9E818B0970908D12 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				5D70D4B9110A5D45B889BC5D /* [CP] Embed Pods Frameworks */,
 				64BED78F39EC87F604FE56B8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -226,14 +225,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = BookVaccineTests;
-			productName = BookVaccineTests;
-			productReference = 00E356EE1AD99517003FC87E /* BookVaccineTests.xctest */;
+			name = VaccineTests;
+			productName = VaccineTests;
+			productReference = 00E356EE1AD99517003FC87E /* VaccineTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* BookVaccine */ = {
+		13B07F861A680F5B00A75B9A /* Vaccine */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "BookVaccine" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Vaccine" */;
 			buildPhases = (
 				B98BB815FDE8324F363A143C /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -241,16 +240,15 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				9A87D287B6FD66CE84D84675 /* [CP] Embed Pods Frameworks */,
 				7A832647D91C52FF897DE4AB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = BookVaccine;
-			productName = BookVaccine;
-			productReference = 13B07F961A680F5B00A75B9A /* BookVaccine.app */;
+			name = Vaccine;
+			productName = Vaccine;
+			productReference = 13B07F961A680F5B00A75B9A /* Vaccine.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -270,7 +268,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "BookVaccine" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Vaccine" */;
 			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -283,8 +281,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* BookVaccine */,
-				00E356ED1AD99517003FC87E /* BookVaccineTests */,
+				13B07F861A680F5B00A75B9A /* Vaccine */,
+				00E356ED1AD99517003FC87E /* VaccineTests */,
 			);
 		};
 /* End PBXProject section */
@@ -339,38 +337,21 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		5D70D4B9110A5D45B889BC5D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BookVaccine-BookVaccineTests/Pods-BookVaccine-BookVaccineTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BookVaccine-BookVaccineTests/Pods-BookVaccine-BookVaccineTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BookVaccine-BookVaccineTests/Pods-BookVaccine-BookVaccineTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		64BED78F39EC87F604FE56B8 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BookVaccine-BookVaccineTests/Pods-BookVaccine-BookVaccineTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Vaccine-VaccineTests/Pods-Vaccine-VaccineTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BookVaccine-BookVaccineTests/Pods-BookVaccine-BookVaccineTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Vaccine-VaccineTests/Pods-Vaccine-VaccineTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BookVaccine-BookVaccineTests/Pods-BookVaccine-BookVaccineTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Vaccine-VaccineTests/Pods-Vaccine-VaccineTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7A832647D91C52FF897DE4AB /* [CP] Copy Pods Resources */ = {
@@ -379,15 +360,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BookVaccine/Pods-BookVaccine-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Vaccine/Pods-Vaccine-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BookVaccine/Pods-BookVaccine-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Vaccine/Pods-Vaccine-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BookVaccine/Pods-BookVaccine-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Vaccine/Pods-Vaccine-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		93DBF91C9E818B0970908D12 /* [CP] Check Pods Manifest.lock */ = {
@@ -405,28 +386,11 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BookVaccine-BookVaccineTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Vaccine-VaccineTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9A87D287B6FD66CE84D84675 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BookVaccine/Pods-BookVaccine-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BookVaccine/Pods-BookVaccine-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BookVaccine/Pods-BookVaccine-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B98BB815FDE8324F363A143C /* [CP] Check Pods Manifest.lock */ = {
@@ -444,7 +408,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BookVaccine-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Vaccine-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -477,7 +441,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* BookVaccineTests.m in Sources */,
+				00E356F31AD99517003FC87E /* VaccineTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,7 +459,7 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* BookVaccine */;
+			target = 13B07F861A680F5B00A75B9A /* Vaccine */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -503,14 +467,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6A8436CA61553F9A2006D33A /* Pods-BookVaccine-BookVaccineTests.debug.xcconfig */;
+			baseConfigurationReference = 6A8436CA61553F9A2006D33A /* Pods-Vaccine-VaccineTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = BookVaccineTests/Info.plist;
+				INFOPLIST_FILE = VaccineTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -524,17 +488,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BookVaccine.app/BookVaccine";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vaccine.app/Vaccine";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE56B4D1A7EDAF0B5D7523F3 /* Pods-BookVaccine-BookVaccineTests.release.xcconfig */;
+			baseConfigurationReference = EE56B4D1A7EDAF0B5D7523F3 /* Pods-Vaccine-VaccineTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = BookVaccineTests/Info.plist;
+				INFOPLIST_FILE = VaccineTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -548,23 +512,23 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BookVaccine.app/BookVaccine";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vaccine.app/Vaccine";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8C69F5024A706C60BC14916D /* Pods-BookVaccine.debug.xcconfig */;
+			baseConfigurationReference = 8C69F5024A706C60BC14916D /* Pods-Vaccine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = BookVaccine/BookVaccine.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Vaccine/Vaccine.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = VCWVN5YC3Q;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = BookVaccine/Info.plist;
+				INFOPLIST_FILE = Vaccine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -575,7 +539,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = BookVaccine;
+				PRODUCT_NAME = Vaccine;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -585,16 +549,16 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22BDB6387227271AAE812B21 /* Pods-BookVaccine.release.xcconfig */;
+			baseConfigurationReference = 22BDB6387227271AAE812B21 /* Pods-Vaccine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = BookVaccine/BookVaccine.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Vaccine/Vaccine.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = VCWVN5YC3Q;
-				INFOPLIST_FILE = BookVaccine/Info.plist;
+				INFOPLIST_FILE = Vaccine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -605,7 +569,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = BookVaccine;
+				PRODUCT_NAME = Vaccine;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -738,7 +702,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "BookVaccineTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "VaccineTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -747,7 +711,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "BookVaccine" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Vaccine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -756,7 +720,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "BookVaccine" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Vaccine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
