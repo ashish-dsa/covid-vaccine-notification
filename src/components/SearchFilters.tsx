@@ -1,79 +1,21 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
-import { Caption, Checkbox, Subheading } from "react-native-paper";
+import { Subheading } from "react-native-paper";
+import { IFilters } from "screens/models";
+import { AgeFilter, NotifyFilter, PriceFilter, VaccineBrandFilter } from "./Filters";
 
 interface ISearchFilters {
-  allChecked: boolean;
-  setAllChecked: Function;
-  setAdultsChecked: Function;
-  adultsChecked: boolean;
-  notifyChecked: boolean;
-  setNotifyChecked: Function;
-  freeChecked: boolean;
-  setFreeChecked: Function;
-  paidChecked: boolean;
-  setPaidChecked: Function;
+  filters: IFilters;
+  setFilters: Function;
 }
-export const SearchFilters = ({
-  allChecked,
-  setAllChecked,
-  setAdultsChecked,
-  adultsChecked,
-  notifyChecked,
-  setNotifyChecked,
-  freeChecked,
-  setFreeChecked,
-  paidChecked,
-  setPaidChecked,
-}: ISearchFilters) => {
+export const SearchFilters = ({ filters, setFilters }: ISearchFilters) => {
   return (
     <View style={styles.filters}>
       <Subheading>Filters</Subheading>
-      <View style={styles.checkBoxRow}>
-        <Checkbox
-          status={allChecked ? "checked" : "unchecked"}
-          onPress={() => {
-            setAllChecked(!allChecked);
-          }}
-        />
-        <Caption style={styles.captionStyle}>45+ years</Caption>
-      </View>
-      <View style={styles.checkBoxRow}>
-        <Checkbox
-          status={adultsChecked ? "checked" : "unchecked"}
-          onPress={() => {
-            setAdultsChecked(!adultsChecked);
-          }}
-        />
-        <Caption style={styles.captionStyle}>18 - 45 years</Caption>
-      </View>
-      <View style={styles.checkBoxRow}>
-        <Checkbox
-          status={freeChecked ? "checked" : "unchecked"}
-          onPress={() => {
-            setFreeChecked(!freeChecked);
-          }}
-        />
-        <Caption style={styles.captionStyle}>Free Vaccine</Caption>
-      </View>
-      <View style={styles.checkBoxRow}>
-        <Checkbox
-          status={paidChecked ? "checked" : "unchecked"}
-          onPress={() => {
-            setPaidChecked(!paidChecked);
-          }}
-        />
-        <Caption style={styles.captionStyle}>Paid Vaccine</Caption>
-      </View>
-      <View style={styles.checkBoxRow}>
-        <Checkbox
-          status={notifyChecked ? "checked" : "unchecked"}
-          onPress={() => {
-            setNotifyChecked(!notifyChecked);
-          }}
-        />
-        <Caption style={styles.captionStyle}>Notify me when vaccine is available</Caption>
-      </View>
+      <AgeFilter filters={filters} setFilters={setFilters} />
+      <PriceFilter filters={filters} setFilters={setFilters} />
+      <VaccineBrandFilter filters={filters} setFilters={setFilters} />
+      <NotifyFilter filters={filters} setFilters={setFilters} />
     </View>
   );
 };
