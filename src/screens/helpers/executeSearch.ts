@@ -1,11 +1,11 @@
-import { NOTIFICATIONS } from "../../services/notifications";
-import { createLocalNotification } from "../../services/notifications/createLocalNotification";
-import { IAndroidNotification } from "../../services/notifications/models";
-import { searchByDistrict } from "../../services/search/searchByDistrict";
-import { searchByPincode } from "../../services/search/searchByPincode";
-import { STORAGE } from "../../services/storage/constants";
-import { getFromStorage } from "../../services/storage/getFromStorage";
-import { SEARCH_OPTIONS } from "../constants";
+import { SEARCH_OPTIONS } from "screens/constants";
+import { ISearchParams } from "screens/models";
+import { NOTIFICATIONS } from "services/notifications";
+import { createLocalNotification } from "services/notifications/createLocalNotification";
+import { IAndroidNotification } from "services/notifications/models";
+import logErrorToMyService from "services/reporting";
+import { searchByDistrict, searchByPincode } from "services/search";
+import { getFromStorage, STORAGE } from "services/storage";
 import { formatResponse } from "./formatResponse";
 
 export const executeSearch = async (): Promise<any> => {
@@ -14,7 +14,7 @@ export const executeSearch = async (): Promise<any> => {
     if (!paramsString || !(typeof paramsString === "string")) {
       return [];
     }
-    const params = JSON.parse(paramsString);
+    const params: ISearchParams = JSON.parse(paramsString);
     let response = null;
     let formattedResponse = [];
     if (params.searchType === SEARCH_OPTIONS.pincode) {
@@ -23,13 +23,7 @@ export const executeSearch = async (): Promise<any> => {
       response = await searchByDistrict(params.searchParams);
     }
     if (response && response.length) {
-      formattedResponse = formatResponse(
-        response,
-        params.allChecked,
-        params.adultsChecked,
-        params.freeChecked,
-        params.paidChecked,
-      );
+      formattedResponse = formatResponse(response, params.filters);
       if (formattedResponse.length > 0) {
         const localNotification: IAndroidNotification = {
           channelId: NOTIFICATIONS.NOTIFICATION_CHANNEL_ID,
@@ -41,6 +35,7 @@ export const executeSearch = async (): Promise<any> => {
     }
     return formattedResponse;
   } catch (error) {
+    logErrorToMyService(error);
     return [];
   }
 };

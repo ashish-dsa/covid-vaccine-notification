@@ -4,33 +4,31 @@ import { StyleSheet, View } from "react-native";
 import { TextInput } from "react-native-paper";
 import DropDown from "react-native-paper-dropdown";
 import { getRequest } from "services/httprequests";
+import { DistrictSelector } from "./DistrictSelector";
 
 const DISTRICT_URL = "https://cdn-api.co-vin.in/api/v2/admin/location/districts/";
-export const DistrictSearch = ({ setDistrict }: { setDistrict: Function }) => {
+export const DistrictSearch = ({ setDistricts }: { setDistricts: Function }) => {
   const [selectState, setSelectState] = useState(false);
-  const [selectDistrict, setSelectDistrict] = useState(false);
   const [showStateDropdown, setShowStateDropdown] = useState(false);
-  const [showDistrictDropdown, setShowDistrictDropdown] = useState(false);
-  const [apiDistrict, setApiDistrict] = useState([]);
+  const [apiDistricts, setapiDistricts] = useState([]);
   const stateList = STATES.map((state, index) => {
     return { label: state.state_name, value: state.state_id };
   });
   useEffect(() => {
-    apiDistrict.length = 0;
-    setApiDistrict([]);
-    setSelectDistrict(false);
+    apiDistricts.length = 0;
+    setapiDistricts([]);
     return () => {};
   }, [selectState]);
-  const updateDistricts = async (value: any) => {
-    if (value) {
-      const districts: any = await getRequest(DISTRICT_URL + value.toString());
-      if (districts && districts.data) {
+  const updateDistricts = async (stateValue: any) => {
+    if (stateValue) {
+      const resultDistricts: any = await getRequest(DISTRICT_URL + stateValue.toString());
+      if (resultDistricts && resultDistricts.data) {
         let districtList = [];
-        for (let districtObject of districts.data.districts) {
+        for (let districtObject of resultDistricts.data.districts) {
           districtList.push({ label: districtObject.district_name, value: districtObject.district_id });
         }
         //@ts-ignore
-        setApiDistrict(districtList);
+        setapiDistricts(districtList);
       }
     }
   };
@@ -52,24 +50,7 @@ export const DistrictSearch = ({ setDistrict }: { setDistrict: Function }) => {
           right: <TextInput.Icon name={"menu-down"} />,
         }}
       />
-      {apiDistrict.length > 0 ? (
-        <DropDown
-          label={"Select District"}
-          mode={"outlined"}
-          value={selectDistrict}
-          setValue={(value: any) => {
-            setDistrict(value);
-            setSelectDistrict(value);
-          }}
-          list={apiDistrict}
-          visible={showDistrictDropdown}
-          showDropDown={() => setShowDistrictDropdown(true)}
-          onDismiss={() => setShowDistrictDropdown(false)}
-          inputProps={{
-            right: <TextInput.Icon name={"menu-down"} />,
-          }}
-        />
-      ) : null}
+      {apiDistricts.length > 0 ? <DistrictSelector setDistricts={setDistricts} apiDistricts={apiDistricts} /> : null}
     </View>
   );
 };

@@ -1,13 +1,9 @@
+import { IFilters } from "screens/models";
 import { ageCheck } from "./ageCheck";
 import { feeCheck } from "./feeCheck";
+import { vaccineBrandCheck } from "./vaccineBrandCheck";
 
-export const formatResponse = (
-  response: Array<any>,
-  allChecked: boolean,
-  adultsChecked: boolean,
-  freeChecked: boolean,
-  paidChecked: boolean,
-) => {
+export const formatResponse = (response: Array<any>, filters: IFilters) => {
   const formattedResponse = response
     .map((center: any) => {
       try {
@@ -15,7 +11,7 @@ export const formatResponse = (
         let vaccineOver18 = -2;
         let vaccineName = "";
         const item = center;
-        if (!feeCheck(item.fee_type, freeChecked, paidChecked)) {
+        if (!feeCheck(item.fee_type, filters.free, filters.paid)) {
           return null;
         }
         item.sessions.forEach((session: any) => {
@@ -30,7 +26,10 @@ export const formatResponse = (
             }
           }
         });
-        if (!ageCheck(vaccineOver45, vaccineOver18, allChecked, adultsChecked)) {
+        if (!ageCheck(vaccineOver45, vaccineOver18, filters.senior, filters.adult)) {
+          return null;
+        }
+        if (!vaccineBrandCheck(vaccineName, filters.covaxin, filters.covishield)) {
           return null;
         }
         return { ...center, vaccineOver18: vaccineOver18, vaccineOver45: vaccineOver45, vaccineName: vaccineName };

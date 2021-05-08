@@ -5,10 +5,8 @@ import { NoCenters } from "components/NoCenters";
 import React, { useEffect, useState } from "react";
 import { StyleSheet } from "react-native";
 import { Appbar, withTheme } from "react-native-paper";
-import { addToStorage, STORAGE } from "services/storage";
-import { mockSleep } from "utils/mockSleep";
+import { getFromStorage, STORAGE } from "services/storage";
 import { executeSearch } from "./helpers/executeSearch";
-import { ISearchParams } from "./helpers/models/ISearchParams";
 import { startSearchService } from "./helpers/startSearchService";
 
 interface ISearchResults {
@@ -17,33 +15,27 @@ interface ISearchResults {
   theme: ReactNativePaper.Theme;
 }
 const SearchResults = ({ route, navigation, theme }: ISearchResults) => {
-  const { allChecked, adultsChecked, notifyChecked, freeChecked, paidChecked, searchType, searchParams } = route.params;
   const [showLoader, setShowLoader] = useState(true);
   const [centersList, setCentersList] = useState([]);
 
   let timer: any;
   const performSearch = async () => {
-    const currentSearchParams: ISearchParams = {
-      searchType: searchType,
-      searchParams: searchParams,
-      allChecked: allChecked,
-      adultsChecked: adultsChecked,
-      freeChecked: freeChecked,
-      paidChecked: paidChecked,
-    };
-    await addToStorage(STORAGE.searchParams, JSON.stringify(currentSearchParams));
-    await mockSleep(1000);
+    const tempString = await getFromStorage(STORAGE.searchParams);
+    if (!tempString || !(typeof tempString === "string")) {
+      return null;
+    }
+    const paramsString = JSON.parse(tempString);
     const formattedResponse = await executeSearch();
     setCentersList(formattedResponse);
     setShowLoader(false);
-    if (notifyChecked) {
+    if (paramsString.filters.notify) {
       startSearchService();
     }
   };
   useEffect(() => {
     performSearch();
     return () => {};
-  }, [searchParams]);
+  }, []);
 
   return (
     <>

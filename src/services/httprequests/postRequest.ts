@@ -1,4 +1,5 @@
 import axios from "axios";
+import logErrorToMyService from "services/reporting";
 import { HEADERS } from "./constants";
 
 export const postRequest = async (url: string, data: object = {}, params: object = {}) => {
@@ -8,6 +9,7 @@ export const postRequest = async (url: string, data: object = {}, params: object
     });
     return response;
   } catch (error) {
+    logErrorToMyService(error);
     return null;
   }
 };

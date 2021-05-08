@@ -9,48 +9,43 @@ export const PinDistrictToggle = ({
   setSearchOption: Function;
 }) => {
   return (
-    <View style={styles.base}>
-      <Button
-        icon="map-marker-radius"
-        mode="contained"
-        onPress={() => {}}
-        style={styles.rightButton}
-        disabled={searchOption !== "pincode"}
-        onTouchStart={() => setSearchOption("pincode")}
-      >
-        Pincode
-      </Button>
-      <Button
-        icon="map-marker-multiple"
-        mode="contained"
-        onPress={() => {}}
-        style={styles.leftButton}
-        disabled={searchOption === "pincode"}
-        onMagicTap={() => setSearchOption("district")}
-        onTouchStart={() => setSearchOption("district")}
-      >
-        District
-      </Button>
+    <View style={styles.toggle}>
+      <View style={styles.base}>
+        <Button
+          icon="map-marker-radius"
+          mode="contained"
+          onPress={() => {}}
+          style={styles.button}
+          disabled={searchOption !== "pincode"}
+          onTouchStart={() => setSearchOption("pincode")}
+        >
+          Pincode
+        </Button>
+        <Button
+          icon="map-marker-multiple"
+          mode="contained"
+          onPress={() => {}}
+          style={styles.button}
+          disabled={searchOption === "pincode"}
+          onMagicTap={() => setSearchOption("district")}
+          onTouchStart={() => setSearchOption("district")}
+        >
+          District
+        </Button>
+      </View>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   base: {
-    height: "15%",
     flexDirection: "row",
-    justifyContent: "center",
+    justifyContent: "space-between",
     alignItems: "center",
   },
-  rightButton: {
-    marginVertical: "5%",
-    paddingRight: "12%",
-  },
-  leftButton: {
-    marginVertical: "5%",
-    paddingLeft: "12%",
-  },
-  pincode: {
+  button: {},
+  toggle: {
     marginHorizontal: "6%",
+    marginVertical: "8%",
   },
 });
