@@ -7,7 +7,7 @@
 ### Features
 
 * Filter by multiple districts, pincodes, cost, brand, etc
-* Notifies whenever vaccine is available
+* Notifies whenever vaccine is available, faster than other apps.
 * Lightweight
 * Runs in the background
 * Runs on your phone, no data collected or sms or whatsapp spam
