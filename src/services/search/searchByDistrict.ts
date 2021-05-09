@@ -7,10 +7,10 @@ export const searchByDistrict = async (districts: Array<string>) => {
   }
   const currentDate = getDDMMYYYY();
   const districtList = [];
-  if (districts[0] !== null) {
+  if (districts[0]) {
     districtList.push(districts[0].toString().trim());
   }
-  if (districts[1] !== null) {
+  if (districts[1]) {
     districtList.push(districts[1].toString().trim());
   }
   const promises = [];

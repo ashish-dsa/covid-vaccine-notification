@@ -1,6 +1,6 @@
 {
   "name": "covidvaccinenotification",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "private": true,
   "author": {
     "name": "Ashish Dsa"
@@ -11,7 +11,7 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "update-version": "yarn version --patch && react-native-version -L -A --generate-build",
+    "update-version": "yarn version --patch && react-native-version -L --generate-build",
     "stay-awake-android": "while true; do adb shell input keyevent mouse ; sleep 55 ; done",
     "clean": "rm -rf node_modules && yarn && concurrently --kill-others-on-fail \"yarn clean-android\" \"yarn clean-ios\"",
     "clean-android": "cd android && rm -rf ./android/build && rm -rf ./android/.gradle && rm -rf ./android/app/build && ./gradlew clean && cd ..",
