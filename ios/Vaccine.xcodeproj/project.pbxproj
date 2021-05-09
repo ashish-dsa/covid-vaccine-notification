@@ -524,7 +524,7 @@
 				CODE_SIGN_ENTITLEMENTS = Vaccine/Vaccine.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 18;
+				CURRENT_PROJECT_VERSION = 19;
 				DEVELOPMENT_TEAM = VCWVN5YC3Q;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Vaccine/Info.plist;
@@ -555,7 +555,7 @@
 				CODE_SIGN_ENTITLEMENTS = Vaccine/Vaccine.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 18;
+				CURRENT_PROJECT_VERSION = 19;
 				DEVELOPMENT_TEAM = VCWVN5YC3Q;
 				INFOPLIST_FILE = Vaccine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
