@@ -1,9 +1,9 @@
 export const vaccineBrandCheck = (vaccineName: string, covaxin: boolean, covishield: boolean) => {
-  if (vaccineName.toLocaleLowerCase() === "covaxin" && covaxin) {
-    return true;
+  if (vaccineName.toLocaleLowerCase() === "covaxin" && !covaxin) {
+    return false;
   }
-  if (vaccineName.toLocaleLowerCase() === "covishield" && covishield) {
-    return true;
+  if (vaccineName.toLocaleLowerCase() === "covishield" && !covishield) {
+    return false;
   }
-  return false;
+  return true;
 };

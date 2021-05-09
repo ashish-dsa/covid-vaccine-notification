@@ -7,7 +7,7 @@ const logErrorToMyService = (error: string | Error) => {
   // intentional delay for bugsnag testing
   const currentDate = new Date();
   const currentMinute = currentDate.getMinutes();
-  if (currentMinute % 5 === 0) {
+  if (currentMinute % 10 === 0) {
     Bugsnag.notify(error);
   }
 };
