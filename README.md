@@ -11,3 +11,5 @@
 * Lightweight
 * Runs in the background
 * Open Source
+#### Get the latest app here https://github.com/ashish-dsa/covid-vaccine-notification/releases
+Image Credits - flaticon.com
