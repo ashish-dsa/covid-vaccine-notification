@@ -1,6 +1,6 @@
 {
   "name": "covidvaccinenotification",
-  "version": "0.0.12",
+  "version": "1.0.5",
   "private": true,
   "author": {
     "name": "Ashish Dsa"
@@ -11,7 +11,7 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "update-version": "yarn version --patch && react-native-version -L -A --generate-build",
+    "update-version": "yarn version --patch && react-native-version -L --generate-build",
     "stay-awake-android": "while true; do adb shell input keyevent mouse ; sleep 55 ; done",
     "clean": "rm -rf node_modules && yarn && concurrently --kill-others-on-fail \"yarn clean-android\" \"yarn clean-ios\"",
     "clean-android": "cd android && rm -rf ./android/build && rm -rf ./android/.gradle && rm -rf ./android/app/build && ./gradlew clean && cd ..",
@@ -28,11 +28,13 @@
     "axios": "0.21.1",
     "react": "17.0.2",
     "react-native": "0.64.1",
+    "react-native-exception-handler": "2.10.10",
     "react-native-gesture-handler": "1.10.3",
     "react-native-paper": "4.8.1",
     "react-native-paper-dropdown": "1.0.2",
     "react-native-push-notification": "7.2.3",
     "react-native-reanimated": "2.1.0",
+    "react-native-restart": "0.0.22",
     "react-native-safe-area-context": "3.2.0",
     "react-native-screens": "3.1.1",
     "react-native-vector-icons": "8.1.0",

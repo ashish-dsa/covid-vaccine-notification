@@ -4,7 +4,6 @@ import { StyleSheet } from "react-native";
 import { Button } from "react-native-paper";
 import { ISearchParams } from "screens/models";
 import { addToStorage, STORAGE } from "services/storage";
-import { mockSleep } from "utils/mockSleep";
 
 export const SubmitSearch = ({ filters, searchParams, searchType, navigation }: ISearchParams) => {
   const [validateSearchParams, setValidateSearchParams] = useState(true);
@@ -29,7 +28,6 @@ export const SubmitSearch = ({ filters, searchParams, searchType, navigation }: 
       filters: filters,
     };
     await addToStorage(STORAGE.searchParams, JSON.stringify(currentSearchParams));
-    await mockSleep(1000);
     //@ts-ignore
     navigation.navigate(ROUTES.SearchResults, {});
   };
