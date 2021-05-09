@@ -10,6 +10,7 @@
 * Notifies whenever vaccine is available
 * Lightweight
 * Runs in the background
+* Runs on your phone, no data collected or sms or whatsapp spam
 * Open Source
 #### Get the latest app here https://github.com/ashish-dsa/covid-vaccine-notification/releases
 Image Credits - flaticon.com
