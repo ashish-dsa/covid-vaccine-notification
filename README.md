@@ -9,5 +9,5 @@
 * Filter by multiple districts, pincodes, cost, brand, etc
 * Notifies whenever vaccine is available.
 * Lightweight
-* Runs in background
+* Runs in the background
 * Open Source
