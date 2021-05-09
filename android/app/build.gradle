@@ -135,8 +135,8 @@ android {
         applicationId "com.covidvaccinebooking"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 1000002
-        versionName "1.0.2"
+        versionCode 1000003
+        versionName "1.0.3"
     }
     splits {
         abi {
