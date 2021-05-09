@@ -62,3 +62,5 @@ buck-out/
 
 *.hprof
 *.keystore
+src/services/search/searchByDistrict.ts
+src/services/search/searchByPincode.ts

@@ -12,5 +12,7 @@
 * Runs in the background
 * Runs on your phone, no data collected or sms or whatsapp spam
 * Open Source
+* Private IP, public IP used on most websites gives old wrong data.
+
 #### Get the latest app here https://github.com/ashish-dsa/covid-vaccine-notification/releases
 Image Credits - flaticon.com
