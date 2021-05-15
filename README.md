@@ -15,4 +15,4 @@
 * Start Notifying - Click on 'Notify For Vaccination'.
 
 #### Get the latest app here https://github.com/ashish-dsa/covid-vaccine-notification/releases
-Image Credits - flaticon.com
+Icon Credits - flaticon.com
