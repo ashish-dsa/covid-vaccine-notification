@@ -53,6 +53,6 @@ const styles = StyleSheet.create({
     color: "#00E5FF",
   },
   dose2: {
-    color: "#40C4FF",
+    color: "#00B0FF",
   },
 });
