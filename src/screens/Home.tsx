@@ -1,5 +1,5 @@
 import { NavigationProp } from "@react-navigation/core";
-import { MainOptions } from "components/MainOptions";
+import { MainOptions } from "components/options";
 import React from "react";
 import { SafeAreaView, StyleSheet } from "react-native";
 import { Appbar, withTheme } from "react-native-paper";
