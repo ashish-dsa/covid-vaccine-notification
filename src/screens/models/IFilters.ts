@@ -6,4 +6,6 @@ export interface IFilters {
   covishield: boolean;
   covaxin: boolean;
   notify: boolean;
+  dose1: boolean;
+  dose2: boolean;
 }

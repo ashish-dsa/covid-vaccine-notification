@@ -2,7 +2,7 @@ import React from "react";
 import { StyleSheet, View } from "react-native";
 import { Subheading } from "react-native-paper";
 import { IFilters } from "screens/models";
-import { AgeFilter, NotifyFilter, PriceFilter, VaccineBrandFilter } from "./Filters";
+import { AgeFilter, DoseFilter, NotifyFilter, PriceFilter, VaccineBrandFilter } from "../filters";
 
 interface ISearchFilters {
   filters: IFilters;
@@ -15,6 +15,7 @@ export const SearchFilters = ({ filters, setFilters }: ISearchFilters) => {
       <AgeFilter filters={filters} setFilters={setFilters} />
       <PriceFilter filters={filters} setFilters={setFilters} />
       <VaccineBrandFilter filters={filters} setFilters={setFilters} />
+      <DoseFilter filters={filters} setFilters={setFilters} />
       <NotifyFilter filters={filters} setFilters={setFilters} />
     </View>
   );

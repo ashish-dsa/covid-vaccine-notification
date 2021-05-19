@@ -1,9 +1,7 @@
 import { NavigationProp } from "@react-navigation/core";
-import { DistrictSearch } from "components/DistrictSearch";
-import { PincodeSearch } from "components/PincodeSearch";
-import { PinDistrictToggle } from "components/PinDistrictToggle";
-import { SearchFilters } from "components/SearchFilters";
-import { SubmitSearch } from "components/SubmitSearch";
+import { DistrictSearch } from "components/district";
+import { PincodeSearch } from "components/pincode";
+import { PinDistrictToggle, SearchFilters, SubmitSearch } from "components/search";
 import React, { useState } from "react";
 import { ScrollView, StyleSheet } from "react-native";
 import { Appbar, withTheme } from "react-native-paper";
@@ -23,6 +21,8 @@ const defaultFilters: IFilters = {
   covishield: true,
   covaxin: true,
   notify: true,
+  dose1: true,
+  dose2: false,
 };
 const SearchAndNotify = ({ navigation, theme }: ISearchAndNotify) => {
   const [searchOption, setSearchOption] = useState(SEARCH_OPTIONS.district);

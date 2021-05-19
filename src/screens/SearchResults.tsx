@@ -1,7 +1,5 @@
 import { NavigationProp } from "@react-navigation/native";
-import { CentersList } from "components/CentersList";
-import { LoadingIndicator } from "components/LoadingIndicator";
-import { NoCenters } from "components/NoCenters";
+import { CentersList, LoadingIndicator, NoCenters } from "components/searchResults";
 import React, { useEffect, useState } from "react";
 import { StyleSheet } from "react-native";
 import { Appbar, withTheme } from "react-native-paper";
