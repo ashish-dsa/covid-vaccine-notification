@@ -18,6 +18,12 @@ export const CentersList = ({ centersList }: { centersList: Array<null> }) => {
                   <Title>{center.item.name}</Title>
                   <Paragraph>{center.item.address}</Paragraph>
                   <Paragraph style={styles.vaccineName}>{center.item.vaccineName}</Paragraph>
+                  {center.item.dose1 > 0 ? (
+                    <Paragraph style={styles.dose1}>Dose 1 - {center.item.dose1}</Paragraph>
+                  ) : null}
+                  {center.item.dose2 > 0 ? (
+                    <Paragraph style={styles.dose2}>Dose 2 - {center.item.dose2}</Paragraph>
+                  ) : null}
                 </View>
               </View>
             </Card.Content>
@@ -42,5 +48,11 @@ const styles = StyleSheet.create({
   viewColumn: {},
   vaccineName: {
     color: "green",
+  },
+  dose1: {
+    color: "#00E5FF",
+  },
+  dose2: {
+    color: "#40C4FF",
   },
 });
